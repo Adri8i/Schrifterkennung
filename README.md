@@ -18,44 +18,57 @@ Dieses Projekt verwendet ein **Convolutional Neural Network (CNN)**, um handgeze
 
 Klonen Sie dieses Repository oder laden Sie die Dateien herunter:
 
-```bash
 git clone https://github.com/DeinUsername/Projektname.git
-```bash
-2. Python-Abhängigkeiten installieren
+
+perl
+Kopieren
+Bearbeiten
+
+### 2. Python-Abhängigkeiten installieren
+
 Installieren Sie die erforderlichen Python-Pakete:
 
-bash
-Kopieren
-Bearbeiten
 pip install tensorflow opencv-python pillow matplotlib scikit-learn
-3. Verzeichnisstruktur vorbereiten
-Stellen Sie sicher, dass Sie das Verzeichnis Alphabet mit den entsprechenden Bilddaten haben. Jedes Unterverzeichnis sollte einen Buchstaben (A-Z) repräsentieren.
 
-💻 Verwendung
-Modelltraining
-Um das Modell zu trainieren, führen Sie das Skript trainKi.py aus. Es wird das CNN-Modell erstellen, es mit den Bildern aus dem Alphabet-Verzeichnis trainieren und das beste Modell speichern:
-
-bash
+markdown
 Kopieren
 Bearbeiten
+
+### 3. Verzeichnisstruktur vorbereiten
+
+Stellen Sie sicher, dass Sie das Verzeichnis `Alphabet` mit den entsprechenden Bilddaten haben. Jedes Unterverzeichnis sollte einen Buchstaben (A-Z) repräsentieren.
+
+## 💻 Verwendung
+
+### Modelltraining
+
+Um das Modell zu trainieren, führen Sie das Skript `trainKi.py` aus. Es wird das CNN-Modell erstellen, es mit den Bildern aus dem `Alphabet`-Verzeichnis trainieren und das beste Modell speichern:
+
 python trainKi.py
-Das Modell wird als alphabet_model_best.keras gespeichert.
 
-Benutzeroberfläche
-Um die GUI zur Vorhersage von handgezeichneten Buchstaben zu verwenden, führen Sie GUI.py aus:
-
-bash
+markdown
 Kopieren
 Bearbeiten
-python GUI.py
-Sie können Buchstaben auf einer Zeichenfläche malen und auf "Predict" klicken, um die Vorhersage anzuzeigen. Es wird auch ein Diagramm der Vorhersage-Wahrscheinlichkeiten erstellt.
 
-Modell laden und Vorhersagen treffen
+- Das Modell wird als `alphabet_model_best.keras` gespeichert.
+
+### Benutzeroberfläche
+
+Um die GUI zur Vorhersage von handgezeichneten Buchstaben zu verwenden, führen Sie `GUI.py` aus:
+
+python GUI.py
+
+php
+Kopieren
+Bearbeiten
+
+- Sie können Buchstaben auf einer Zeichenfläche malen und auf "Predict" klicken, um die Vorhersage anzuzeigen. Es wird auch ein Diagramm der Vorhersage-Wahrscheinlichkeiten erstellt.
+
+### Modell laden und Vorhersagen treffen
+
 Wenn Sie das Modell nur verwenden möchten, ohne es neu zu trainieren, können Sie das gespeicherte Modell direkt laden und Vorhersagen treffen:
 
-python
-Kopieren
-Bearbeiten
+```python
 from tensorflow.keras.models import load_model
 model = load_model('alphabet_model.keras')
 📂 Verzeichnisstruktur
