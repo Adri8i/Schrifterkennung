@@ -18,7 +18,7 @@ Dieses Projekt verwendet ein **Convolutional Neural Network (CNN)**, um handgeze
 
 Klonen Sie dieses Repository oder laden Sie die Dateien herunter:
 
-git clone https://github.com/DeinUsername/Projektname.git
+git clone https://github.com/Adri8i/Schrifterkennung.git
 
 perl
 Kopieren
@@ -96,3 +96,7 @@ Das Diagramm zeigt die Vorhersage-Wahrscheinlichkeiten für alle Buchstaben A-Z.
 
 📝 Lizenz
 Dieses Projekt ist unter der MIT-Lizenz lizenziert.
+
+markdown
+Kopieren
+Bearbeiten
