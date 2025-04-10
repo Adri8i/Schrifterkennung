@@ -20,6 +20,7 @@ Klonen Sie dieses Repository oder laden Sie die Dateien herunter:
 
 ```bash
 git clone https://github.com/DeinUsername/Projektname.git
+```bash
 2. Python-Abhängigkeiten installieren
 Installieren Sie die erforderlichen Python-Pakete:
 
